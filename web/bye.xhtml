@@ -13,12 +13,24 @@
                 </h1>
                 <h:form>
                     <p>
-                        <h:commandLink action="hello">Hello</h:commandLink>
+                        <!-- link -->
+                        <p>
+                            <h:commandLink action="#{navigation.hello}"
+                                           value="Controller to Hello" />
+                        </p>
+                        <!-- button -->
+                        <p>
+                            <h:commandButton action="#{navigation.hello}"
+                                             value="Controller to Hello" />
+                        </p>
                         <h:outputText> | </h:outputText>
                         <h:commandLink action="bye">Bye</h:commandLink>
                     </p>
                     <p>
                         <h:commandLink action="home" value="New path to Hello" />
+                    </p>
+                    <p>
+                        <h:commandButton action="#{counter.inc}" value="#{counter.value}" />
                     </p>
                 </h:form>
                 <p>
