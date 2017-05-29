@@ -7,8 +7,10 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.ViewScoped;
 
-@ManagedBean(@ManagedProperty("applicationCounter"))
+import javax.inject.Named;
+@Named(value=("applicationCounter"))
 @ViewScoped
+
 public class ViewCounter implements Serializable {
 
     ApplicationCounter appCounter;

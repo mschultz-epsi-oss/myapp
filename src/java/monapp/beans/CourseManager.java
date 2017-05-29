@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import javax.ejb.Stateless;
 import java.util.List;
 import java.util.Objects;
+import javax.ejb.Stateful;
 
-@Stateless
+@Stateful
 public class CourseManager {
-
+    private int id= 0;
     final private List<Course> listeCourses;
 
     public CourseManager() {
@@ -29,6 +30,7 @@ public class CourseManager {
 
     public Course saveCourse(Course c) {
         if (c.getId() == null) {
+            c.setId(id++);
             listeCourses.add(c);
         } else {
             for (Course course : listeCourses) {
