@@ -31,6 +31,14 @@
                             </td>
                         </tr>
                         <tr>
+                            <td><h:outputText value="Level : " /></td>
+                            <td>
+                                <h:selectOneMenu id="level" value="#{c.level}" required="false">
+                                    <f:selectItems value="#{params.levels}" />
+                                </h:selectOneMenu>
+                            </td>
+                        </tr>
+                        <tr>
                             <td><h:outputText value="Description :" /></td>
                             <td>
                                 <h:inputTextarea id="description"
