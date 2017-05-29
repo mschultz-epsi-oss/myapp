@@ -12,16 +12,23 @@
                 <h1>Course edition</h1>
                 <h:form id="test">
                     <c:set var="c" value="#{course.theCourse}" />
+                    <!-- TODO: use <h:panelGrid/> with tuto : http://www.mkyong.com/jsf2/jsf-2-panelgrid-example/ -->
                     <table border="1">
                         <tr>
                             <td><h:outputText value="Name :" /></td>
-                            <td><h:inputText id="name" value="#{c.name}" />
-                                <h:message style="color:red" for="name" /></td>
+                            <td><h:inputText id="name" value="#{c.name}" required="true"
+                                             requiredMessage="Le nom est obligatoire">
+                                    <f:validateLength minimum="3" maximum="55" />
+                                </h:inputText>
+                            </td>
                         </tr>
                         <tr>
                             <td><h:outputText value="Hours :" /></td>
-                            <td><h:inputText id="hours" value="#{c.hours}" />
-                                <h:message style="color:red" for="hours" /></td>
+                            <td><h:inputText id="hours" value="#{c.hours}">
+                                    <!--<f:validateRegex pattern="'[0-9]'"/> TODO: refaire mieux-->
+                                </h:inputText>
+                                <h:message style="color:red" for="hours" />
+                            </td>
                         </tr>
                         <tr>
                             <td><h:outputText value="Description :" /></td>

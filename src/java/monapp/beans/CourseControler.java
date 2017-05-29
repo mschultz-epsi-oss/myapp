@@ -1,6 +1,8 @@
 package monapp.beans;
 
 import java.util.List;
+import java.util.Locale;
+import java.util.ResourceBundle;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.faces.application.FacesMessage;
@@ -42,6 +44,17 @@ public class CourseControler {
     }
 
     public String save() {
+        if (theCourse.getHours() % 2 != 0) {
+            FacesContext ct = FacesContext.getCurrentInstance();
+            Locale locale = ct.getViewRoot().getLocale();
+            String messageBundleName = ct.getApplication().getMessageBundle();
+            ResourceBundle bundle = ResourceBundle.getBundle(messageBundleName, locale);
+            String message = bundle.getString("hoursNotValid");
+            FacesMessage msg = new FacesMessage(message);
+            ct.addMessage("test:hours", msg);
+            ct.validationFailed();
+            return "editCourse";
+        }
         cm.saveCourse(theCourse);
         return "showCourse";
     }
