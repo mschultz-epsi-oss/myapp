@@ -25,6 +25,7 @@ public class CourseControler {
             Course c1 = new Course();
             c1.setName("Architecture JEE");
             c1.setHours(60);
+            c1.setLevel("D");
             c1.setDescription("Introduction à JEE.");
             cm.saveCourse(c1);
         }

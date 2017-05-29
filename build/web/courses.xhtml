@@ -29,10 +29,20 @@
                                 <h:outputText value="#{o.hours}" />
                             </h:column>
                             <h:column>
+                                <f:facet name="header">Level</f:facet>
+                                <h:outputText value="#{o.level}" />
+                            </h:column>
+                            <h:column>
                                 <f:facet name="header">Action</f:facet>
                                 <h:commandLink value="Show" action="#{course.show(o.id)}" />
                             </h:column>
                         </h:dataTable>
+                        <table border="1">
+                            <tr>
+                                <td><h:commandButton
+                            action="#{course.newCourse()}" value="Add" /></td>
+                            </tr>
+                        </table>
                     </h:form>
                 </f:view>
             </ui:define>
