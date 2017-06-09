@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
+        <file>
+            <url>web/editCourse.xhtml</url>
+            <bookmark id="2">
+                <name/>
+                <line>55</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/java/monapp/beans/Course.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>4</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/melvin/NetBeansProjects/myapp/src/java/monapp/beans/CourseManager.java</file>
             <file>file:/home/melvin/NetBeansProjects/myapp/web/courses.xhtml</file>
-            <file>file:/home/melvin/NetBeansProjects/myapp/web/editCourse.xhtml</file>
-            <file>file:/home/melvin/NetBeansProjects/myapp/src/java/monapp/beans/Course.java</file>
+            <file>file:/home/melvin/NetBeansProjects/myapp/src/java/monapp/beans/FormTestControler.java</file>
+            <file>file:/home/melvin/NetBeansProjects/myapp/web/resources/mytags/alert.xhtml</file>
+            <file>file:/home/melvin/NetBeansProjects/myapp/web/bye.xhtml</file>
+            <file>file:/home/melvin/NetBeansProjects/myapp/web/template/mylayout.xhtml</file>
             <file>file:/home/melvin/NetBeansProjects/myapp/web/template/menu.xhtml</file>
-            <file>file:/home/melvin/NetBeansProjects/myapp/web/WEB-INF/web.xml</file>
-            <file>file:/home/melvin/NetBeansProjects/myapp/web/showCourse.xhtml</file>
-            <file>file:/home/melvin/NetBeansProjects/myapp/src/java/monapp/beans/CourseControler.java</file>
+            <file>file:/home/melvin/NetBeansProjects/myapp/web/formtest.xhtml</file>
         </group>
     </open-files>
 </project-private>
